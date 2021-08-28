@@ -1,0 +1,160 @@
+/* ========intro style======== */
+
+section.hero-intro {
+    background-image: url(../img/intro/bg.png);
+}
+
+.about {
+    padding: 80px 0;
+}
+
+.about__img img {
+    border-radius: 5px;
+}
+
+.about__content h3 {
+    font-size: 36px;
+    color: #0071BC;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.about__content span {
+    display: block;
+    font-size: 18px;
+    color: #6F6F6F;
+}
+
+.about__content hr {
+    margin: 25px 0 22px 0;
+    height: 4px;
+    background-color: #30C2F5;
+    width: 115px;
+}
+
+.about__content p {
+    font-size: 18px;
+}
+
+.number {
+    background-image: url(../img/intro/intro01.png);
+    padding: 112px 0px;
+}
+
+.number__item {
+    position: relative;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.number__item h2 {
+    color: #fff;
+    font-size: 58px;
+    font-weight: 700;
+}
+
+.number__item p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.number__item::after {
+    top: 0;
+    width: 0px;
+    height: 100%;
+    right: -15px;
+    position: absolute;
+    content: "";
+    border: 1px dashed #FFFFFF
+}
+
+.number__item.last::after {
+    position: static;
+    border: none;
+}
+
+
+/* ========value======== */
+
+section.value {
+    padding: 80px 0 90px;
+}
+
+.value-content {
+    margin-top: 90px;
+}
+
+.value__block img {
+    width: 110px;
+    margin: 0 auto;
+}
+
+.value__block h4 {
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 14px;
+}
+
+.value__block p {
+    font-size: 18px;
+}
+
+
+/* ========value======== */
+
+@media only screen and (max-width: 767px) {
+    .about {
+        padding: 40px 0px;
+    }
+    .order01__sp {
+        order: 1;
+    }
+    .order02__sp {
+        order: 2;
+    }
+    .about__content h3 {
+        font-size: 24px;
+    }
+    .about__content span,
+    .about__content p,
+    .value__block p {
+        font-size: 16px;
+    }
+    .about__content hr {
+        margin: 15px 0px;
+    }
+    .about__content {
+        margin-bottom: 25px;
+    }
+    .number {
+        padding: 40px 0;
+    }
+    .number__item {
+        margin-bottom: 20px;
+    }
+    .number__item.last {
+        margin-bottom: 0px;
+    }
+    .number__item h2 {
+        font-size: 34px;
+    }
+    section.value {
+        padding: 40px 0 35px;
+    }
+    .value-content {
+        margin-top: 50px;
+    }
+    .value__block h4 {
+        margin-top: 15px;
+    }
+    .value__block {
+        margin-bottom: 40px;
+    }
+    .number__item::after {
+        position: static;
+        display: none;
+    }
+}

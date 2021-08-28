@@ -1,0 +1,148 @@
+/* index search style */
+
+section.search {
+    padding: 80px 0px;
+    background-color: #F6F6F6;
+}
+
+.form-group input {
+    width: 84%;
+    height: 60px;
+    margin-right: 15px;
+    font-size: 18px;
+    color: #000;
+}
+
+.form-group button {
+    flex: 1;
+    background-color: #FF9B00;
+    transition: 0.2s;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-group button:hover {
+    background-color: #FF5C00;
+}
+
+.form-group select {
+    height: 50px;
+    font-size: 18px;
+    color: #000;
+}
+
+.form-check-inline {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    justify-content: center;
+    height: 50px;
+    border: 1px solid #ced4da;
+    margin-right: 0px !important;
+}
+
+.form-check-inline input {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px !important;
+}
+
+.form-check-inline label {
+    font-size: 18px;
+}
+
+
+/* jobs-list */
+
+.jobs-list {
+    padding: 90px 0px;
+}
+
+.jobs-list__top {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.jobs__number h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #0071BC;
+}
+
+.jobs__number p {
+    font-size: 18px;
+}
+
+.jobs__number p span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sort-jobs {
+    align-items: center;
+    font-size: 18px;
+}
+
+.sort-jobs p {
+    display: inline-block;
+}
+
+.sort-jobs select {
+    font-weight: 600;
+    border: none;
+    width: 130px;
+}
+
+.jobs-list .jobs__inner {
+    margin-top: 40px;
+}
+
+
+/* jobs-list */
+
+@media only screen and (max-width: 767px) {
+    section.search {
+        padding: 40px 0px 30px;
+    }
+    .form-group input {
+        width: 65%;
+        height: 44px;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    .form-check-inline label {
+        font-size: 16px;
+    }
+    .form-check-inline {
+        height: 38px;
+    }
+    .form-check-inline input {
+        width: 15px;
+        height: 15px;
+    }
+    .form-group select {
+        height: 38px;
+        font-size: 16px;
+        color: #000;
+    }
+    .form-group button {
+        font-size: 14px;
+    }
+    .jobs-list {
+        padding: 45px 0px 60px;
+    }
+    .jobs-list__top {
+        flex-wrap: wrap;
+    }
+    .jobs__number {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .jobs__number h3 {
+        font-size: 26px;
+    }
+    .jobs__number p span {
+        font-size: 18px;
+    }
+}

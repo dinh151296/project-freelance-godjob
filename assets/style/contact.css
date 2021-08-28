@@ -1,0 +1,147 @@
+/* contact style */
+
+section.hero-contact {
+    background-image: url(../img/contact/contact-bg.jpg);
+}
+
+.contact {
+    padding: 80px 0 90px;
+}
+
+.contact-top {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.block {
+    padding: 0 20px;
+}
+
+.block__img {
+    background-color: #0071BC;
+    width: 64px;
+    height: 64px;
+    position: relative;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.block__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.block__img.img-phone img {
+    width: 27px;
+}
+
+.block__img.img-add img {
+    width: 25px;
+}
+
+.block__img.img-mail img {
+    width: 30px;
+}
+
+.block p {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 18px;
+    color: #000;
+}
+
+.contact__inner {
+    display: flex;
+    background-color: #F6F6F6;
+}
+
+.contact__inner iframe {
+    width: 51.5%;
+    height: 420px;
+}
+
+form {
+    padding: 26px 24px 35px;
+    flex: 1;
+}
+
+.form__title {
+    padding-bottom: 5px;
+    font-size: 22px;
+    color: #0071BC;
+    font-weight: 600;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.form-group {
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    height: 43px;
+}
+
+.form-group input,
+.form-group textarea {
+    font-size: 18px;
+    color: #a4a4a4;
+    border: none;
+}
+
+.form-group textarea {
+    height: 90px;
+}
+
+form button[type="submit"] {
+    width: 100px;
+    height: 43px;
+    float: right;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 18px;
+    background-color: #FF9B00;
+}
+
+@media only screen and (max-width: 767px) {
+    .contact {
+        padding: 40px 0 40px;
+    }
+    .contact-top {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contact__inner {
+        flex-wrap: wrap;
+    }
+    form {
+        width: 100%;
+        padding: 20px 20px 30px;
+    }
+    .contact__inner iframe {
+        width: 100%;
+        margin-top: 0px;
+        height: 240px;
+    }
+    .form__title {
+        font-size: 20px;
+    }
+    .form-group input {
+        height: 38px;
+        font-size: 16px;
+    }
+    .form-group textarea,
+    form button[type="submit"] {
+        font-size: 16px;
+    }
+    form button[type="submit"] {
+        height: 38px;
+        width: 90px;
+    }
+}
